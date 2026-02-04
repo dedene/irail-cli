@@ -53,11 +53,10 @@ func (c *DisturbancesCmd) Run(root *RootFlags) error {
 }
 
 func filterDisturbances(disturbances []api.Disturbance, typeFilter string) []api.Disturbance {
-	typeFilter = strings.ToLower(typeFilter)
 	var result []api.Disturbance
 
 	for _, d := range disturbances {
-		if strings.ToLower(d.Type) == typeFilter {
+		if strings.EqualFold(d.Type, typeFilter) {
 			result = append(result, d)
 		}
 	}

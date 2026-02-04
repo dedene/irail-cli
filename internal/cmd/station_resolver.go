@@ -23,12 +23,13 @@ func ResolveStation(ctx context.Context, client *api.Client, name string, jsonMo
 	}
 
 	// Try exact match first (case-insensitive)
-	nameLower := strings.ToLower(name)
 	for _, s := range resp.Station {
-		if strings.ToLower(s.Name) == nameLower || strings.ToLower(s.StandardName) == nameLower {
+		if strings.EqualFold(s.Name, name) || strings.EqualFold(s.StandardName, name) {
 			return &s, nil
 		}
 	}
+
+	nameLower := strings.ToLower(name)
 
 	// Try ID match
 	for _, s := range resp.Station {
