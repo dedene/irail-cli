@@ -1,5 +1,10 @@
 # 🚃 irail-cli - iRail (NMBS/SNCB) in your terminal
 
+[![CI](https://github.com/dedene/irail-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/dedene/irail-cli/actions/workflows/ci.yml)
+[![Go 1.23+](https://img.shields.io/badge/go-1.23+-00ADD8.svg)](https://go.dev/)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dedene/irail-cli)](https://goreportcard.com/report/github.com/dedene/irail-cli)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 CLI for Belgian railway (NMBS/SNCB) real-time data via [iRail API](https://api.irail.be/).
 
 ## Installation
