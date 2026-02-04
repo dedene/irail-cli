@@ -1,6 +1,6 @@
-# irail-cli
+# 🚃 irail-cli - iRail (NMBS/SNCB) in your terminal
 
-CLI for Belgian railway (NMBS/SNCB) real-time schedules via [iRail API](https://api.irail.be/).
+CLI for Belgian railway (NMBS/SNCB) real-time data via [iRail API](https://api.irail.be/).
 
 ## Installation
 
@@ -82,11 +82,11 @@ irail disturbances --type disturbance  # only disruptions
 
 ## Options
 
-| Flag | Description |
-|------|-------------|
-| `--json` | Output JSON |
-| `--lang` | Language: nl, fr, en, de |
-| `--no-color` | Disable colors |
+| Flag         | Description              |
+| ------------ | ------------------------ |
+| `--json`     | Output JSON              |
+| `--lang`     | Language: nl, fr, en, de |
+| `--no-color` | Disable colors           |
 
 ### Environment Variables
 
