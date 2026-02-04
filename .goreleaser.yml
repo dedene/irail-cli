@@ -53,6 +53,7 @@ brews:
     repository:
       owner: dedene
       name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     directory: Formula
     homepage: https://github.com/dedene/irail-cli
     description: CLI for Belgian railway (NMBS/SNCB) schedules
