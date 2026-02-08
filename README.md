@@ -122,6 +122,16 @@ irail completion zsh > "${fpath[1]}/_irail"
 irail completion fish > ~/.config/fish/completions/irail.fish
 ```
 
+## Claude Code Skill
+
+Install as a Claude Code skill:
+
+```bash
+npx @anthropic-ai/claude-code skills add dedene/irail-cli
+```
+
+This enables Claude to query Belgian train schedules, find connections, and check service disruptions.
+
 ## License
 
 MIT
