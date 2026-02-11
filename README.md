@@ -7,6 +7,14 @@
 
 CLI for Belgian railway (NMBS/SNCB) real-time data via [iRail API](https://api.irail.be/).
 
+## Agent Skill
+
+This CLI is available as an [open agent skill](https://skills.sh/) for AI assistants including [Claude Code](https://claude.ai/code), [OpenClaw](https://openclaw.ai/), [Codex](https://github.com/openai/codex), Cursor, GitHub Copilot, and [35+ agents](https://github.com/vercel-labs/skills#supported-agents).
+
+```bash
+npx skills add dedene/irail-cli
+```
+
 ## Installation
 
 ### Homebrew (macOS/Linux)
@@ -120,14 +128,6 @@ irail completion zsh > "${fpath[1]}/_irail"
 
 # Fish
 irail completion fish > ~/.config/fish/completions/irail.fish
-```
-
-## Agent Skill
-
-This CLI is available as an [open agent skill](https://skills.sh/) for AI assistants including [Claude Code](https://claude.ai/code), [OpenClaw](https://openclaw.ai/), Cursor, and GitHub Copilot:
-
-```bash
-npx skills add dedene/irail-cli
 ```
 
 ## License
