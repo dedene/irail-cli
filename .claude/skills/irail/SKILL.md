@@ -217,3 +217,10 @@ irail connections Brugge Leuven --json | jq '[.[] | select(.vias == null or (.vi
 - Be mindful of API usage in loops - add delays between requests
 - Station names are case-insensitive and support partial matching
 - Delay values are in seconds (divide by 60 for minutes)
+
+
+## Installation
+
+```bash
+brew install dedene/tap/irail
+```
