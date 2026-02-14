@@ -4,6 +4,25 @@ description: >
   Query Belgian railway (NMBS/SNCB) schedules via the irail CLI. Use when the user wants
   train departures, connections between stations, train compositions, or service disruptions.
   Triggered by mentions of Belgian trains, NMBS, SNCB, iRail, train schedules, or railway delays.
+license: MIT
+homepage: https://github.com/dedene/irail-cli
+metadata:
+  author: dedene
+  version: "1.1.0"
+  openclaw:
+    requires:
+      bins:
+        - irail
+      anyBins:
+        - jq
+    install:
+      - kind: brew
+        tap: dedene/tap
+        formula: irail
+        bins: [irail]
+      - kind: go
+        package: github.com/dedene/irail-cli/cmd/irail
+        bins: [irail]
 ---
 
 # irail-cli
